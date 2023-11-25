@@ -4,9 +4,24 @@ import Navigation from "../components/navigation/Navigation.astro";
 
 import '../styles/global.scss';
 ---
+<style>
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .content {
+        flex: 1;
+    }
+</style>
+
 <html lang="hu">
     <Header />
     <body>
-        <Navigation />
+        <div class="container">
+            <Navigation />
+            <div class="content" />
+        </div>
     </body>
 </html>

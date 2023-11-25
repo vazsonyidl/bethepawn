@@ -1,0 +1,13 @@
+@use '../../styles/colors.scss' as colors;
+
+.link {
+  text-decoration: none;
+  color: unset;
+  padding: 8px;
+}
+
+.active {
+  text-decoration: underline;
+  text-decoration-color: colors.$color-cab-sav;
+  text-decoration-thickness: 2px;
+}

@@ -3,6 +3,8 @@ import { Image } from 'astro:assets';
 
 import '../../styles/colors.scss';
 import logo from '../../../public/logo.svg';
+
+import Link from "../link/Link.astro";
 ---
 <style>
     .root {
@@ -13,6 +15,8 @@ import logo from '../../../public/logo.svg';
     .navigation {
         display: flex;
         align-items: center;
+        flex: 1;
+        justify-content: center;
     }
 </style>
 
@@ -21,8 +25,8 @@ import logo from '../../../public/logo.svg';
         <Image src={logo} alt="sad side-eyed pawn figure" width="50" height="50"/>
     </div>
     <nav class="navigation">
-        <div>Főoldal</div>
-        <div>Rólunk</div>
+        <Link title="Játékok" path="/"/>
+        <Link title="Rólunk" path="/about-us"/>
     </nav>
 </div>
 

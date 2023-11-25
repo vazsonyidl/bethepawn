@@ -1,0 +1,12 @@
+---
+
+const {title, path} = Astro.props;
+const { pathname } = new URL(Astro.request.url);
+---
+<style>
+    @import "./Link.scss";
+</style>
+
+<a href={path} class:list={["link", pathname === path ? "active" : ""]}>
+    {title}
+</a>
