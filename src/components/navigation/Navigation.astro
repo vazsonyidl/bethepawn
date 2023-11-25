@@ -1,0 +1,28 @@
+---
+import { Image } from 'astro:assets';
+
+import '../../styles/colors.scss';
+import logo from '../../../public/logo.svg';
+---
+<style>
+    .root {
+        display: flex;
+        margin: 12px;
+    }
+
+    .navigation {
+        display: flex;
+        align-items: center;
+    }
+</style>
+
+<div class="root">
+    <div>
+        <Image src={logo} alt="sad side-eyed pawn figure" width="50" height="50"/>
+    </div>
+    <nav class="navigation">
+        <div>Főoldal</div>
+        <div>Rólunk</div>
+    </nav>
+</div>
+
