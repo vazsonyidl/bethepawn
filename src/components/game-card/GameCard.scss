@@ -1,0 +1,13 @@
+@use '../../styles/colors.scss' as colors;
+
+.game-card-root {
+  display: flex;
+  border: 1px solid colors.$color-azure;
+  padding: 12px;
+  border-radius: 12px;
+  max-width: 50%;
+}
+
+.game-card-info {
+  color: colors.$color-haiti;
+}

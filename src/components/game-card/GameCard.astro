@@ -1,0 +1,27 @@
+---
+import {Image} from 'astro:assets';
+
+import logo from "../../../public/logo.svg";
+
+const {title, info, description} = Astro.props;
+---
+<style is:raw>
+    @import "GameCard.scss";
+</style>
+
+<div class='game-card-root'>
+    <div class="game-card-image">
+        <Image src={logo} alt="sad side-eyed pawn figure" width="180" height="180"/>
+    </div>
+    <div class="game-card-content">
+        <h4>
+            {title}
+        </h4>
+        <h5 class="game-card-info">
+            {info}
+        </h5>
+        <div>
+            {description}
+        </div>
+    </div>
+</div>
