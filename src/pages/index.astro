@@ -14,6 +14,14 @@ const boardGameEntries = await getCollection('board-games');
         align-items: center;
         margin: 0 10%;
     }
+
+    .game-card-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 30%));
+        gap: 32px;
+
+        margin: 16px 0;
+    }
 </style>
 
 <MainPageLayout>
@@ -24,8 +32,14 @@ const boardGameEntries = await getCollection('board-games');
 
                 <p>Kedvcsinálóként az alábbi játékok közül tudtok válogatni</p>
 
-                {boardGameEntries.map(({data}) =>
-                        <GameCard title={data.title} info={data.info} description={data.description} imageLink={data.image}/>)}
+                <div class="game-card-container">
+                    {boardGameEntries.map(({data}) =>
+                            <GameCard title={data.title}
+                                      info={data.info}
+                                      description={data.description}
+                                      imageLink={data.image}/>
+                    )}
+                </div>
 
                 Az oldal még fejlesztés alatt áll, de a <a href="https://facebook.com/bethepawn"
                                                            rel="noopener noreferrer" target="_blank">Facebookon</a>
