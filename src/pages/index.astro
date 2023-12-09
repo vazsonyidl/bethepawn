@@ -1,5 +1,10 @@
 ---
+import {getCollection} from 'astro:content';
+
 import MainPageLayout from "../layouts/MainPageLayout.astro";
+import GameCard from "../components/game-card/GameCard.astro";
+
+const boardGameEntries = await getCollection('board-games');
 ---
 <style>
     .content {
@@ -19,14 +24,11 @@ import MainPageLayout from "../layouts/MainPageLayout.astro";
 
                 <p>Kedvcsinálóként az alábbi játékok közül tudtok válogatni</p>
 
-                <ul>
-                    <li>Carcassone</li>
-                    <li>Catan</li>
-                    <li>Binding of Isaac</li>
-                    <li>Hellapagos</li>
-                    <li>... és még sok más különleges és jól ismert játék is.</li>
-                </ul>
-                Az oldal még fejlesztés alatt áll, de a <a href="https://facebook.com/bethepawn" rel="noopener noreferrer" target="_blank">Facebookon</a>
+                {boardGameEntries.map(({data}) =>
+                        <GameCard title={data.title} info={data.info} description={data.description} imageLink={data.image}/>)}
+
+                Az oldal még fejlesztés alatt áll, de a <a href="https://facebook.com/bethepawn"
+                                                           rel="noopener noreferrer" target="_blank">Facebookon</a>
                 már minden információt megtalálhattok, szeretettel várunk benneteket!
             </div>
         </div>
