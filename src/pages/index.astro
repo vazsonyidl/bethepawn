@@ -2,30 +2,60 @@
 import MainPageLayout from "../layouts/MainPageLayout.astro";
 ---
 <style>
-    .header-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: color-mix(in srgb, var(--color-azure) 10%, transparent);
-        padding: 12px;
-    }
-
-    .footer-container {
+    .content {
         padding: 12px;
     }
 </style>
 
 <MainPageLayout>
-    <div slot="content">
-        <div class="header-container">
-            <h1>Fedezd fel Veszprémben kölcsönözhető társasjáték kínálatunkat és kezdődhet a játék!</h1>
-        </div>
+    <div slot="content" class="content">
+        <h1>Társasjáték kölcsönzés Veszprémben</h1>
 
-        <div class="footer-container">
+        <p>Üdvözöljük a felejthetetlen társasjáték élmények világában! Ha Ön Veszprémben vagy környékén él, és egy
+            különleges eseményre készül, ne hagyja ki társasjáték kölcsönzési szolgáltatásainkat.</p>
+
+        <h2>Miért válasszon minket?</h2>
+
+        <h3>Széles Választék</h3>
+        <p>Kínálatunkban megtalálható a legújabb és legnépszerűbb társasjátékok széles választéka. Legyen szó családi
+            összejövetelről, baráti buliról vagy céges rendezvényről, nálunk mindig megtalálja a tökéletes játékot.</p>
+
+        <h3>Rugalmas Kölcsönzés</h3>
+        <p>Az esemény időtartamához igazodva kínálunk rugalmas kölcsönzési lehetőségeket. Egy estés összejöveteltől
+            kezdve egészen hosszabb távú kölcsönzésekig minden igényt kielégítünk.</p>
+
+        <h3>Kényelmes Helyszín</h3>
+        <p>A kölcsönzö Veszprém szívében található, könnyen megközelíthető helyen. Szívesen segítünk Önnek a megfelelő
+            társasjáték kiválasztásában, és a kölcsönzési folyamat gyors és egyszerű lebonyolításában.</p>
+
+        <h2>Hogyan Működik?</h2>
+
+        <ol>
+            <li><strong>Válassza ki a játékot:</strong> Böngéssze át kínálatunkat, és válassza ki a megfelelő
+                társasjátékot az esemény típusa szerint. (létszám, rászánt idő)
+            </li>
+            <li><strong>Kérjen ajánlatot:</strong> Kérjen tőlünk ajánlatot a kiválasztott játékra és az esemény
+                időtartamára a <a href="https://facebook.com/bethepawn"
+                                 rel="noopener noreferrer" target="_blank">Facebook</a> oldalunkon keresztül.
+            </li>
+            <li><strong>Fizessen kényelmesen:</strong> Elfogadott fizetési módokkal könnyen rendezze a kölcsönzési
+                díjat.
+            </li>
+            <li><strong>Vegye át a játékot:</strong> Jöjjön el hozzánk, és vegye át a kiválasztott társasjátékot.
+            </li>
+        </ol>
+
+        <h2>Legyen a Rendezvénye Egyedi!</h2>
+        <p>A társasjátékokkal garantáltan felejthetetlenné teheti bármilyen eseményét. Legyen szó születésnapról,
+            házibuliról vagy céges összejövetelről, a társasjátékok mindig jó hangulatot teremtenek.</p>
+
+        <p>Ne habozzon, válassza a társasjátékok kölcsönzését Veszprémben! Játékra fel!</p>
+
+        <hr />
+        <i>
             Az oldal még fejlesztés alatt áll, de a <a href="https://facebook.com/bethepawn"
                                                        rel="noopener noreferrer" target="_blank">Facebookon</a>
             már minden információt megtalálhattok, szeretettel várunk benneteket!
-        </div>
+        </i>
     </div>
 </MainPageLayout>
