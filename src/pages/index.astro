@@ -1,10 +1,5 @@
 ---
-import {getCollection} from 'astro:content';
-
 import MainPageLayout from "../layouts/MainPageLayout.astro";
-import GameCard from "../components/game-card/GameCard.astro";
-
-const boardGameEntries = await getCollection('board-games');
 ---
 <style>
     .header-container {
@@ -13,13 +8,6 @@ const boardGameEntries = await getCollection('board-games');
         justify-content: center;
         align-items: center;
         background-color: color-mix(in srgb, var(--color-azure) 10%, transparent);
-        padding: 12px;
-    }
-
-    .game-card-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(400px, 30%));
-        gap: 32px;
         padding: 12px;
     }
 
@@ -32,15 +20,6 @@ const boardGameEntries = await getCollection('board-games');
     <div slot="content">
         <div class="header-container">
             <h1>Fedezd fel Veszprémben kölcsönözhető társasjáték kínálatunkat és kezdődhet a játék!</h1>
-        </div>
-
-        <div class="game-card-container">
-            {boardGameEntries.map(({data}) =>
-                    <GameCard title={data.title}
-                              info={data.info}
-                              description={data.description}
-                              imageLink={data.image}/>
-            )}
         </div>
 
         <div class="footer-container">

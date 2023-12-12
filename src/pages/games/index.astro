@@ -1,0 +1,29 @@
+---
+import {getCollection} from 'astro:content';
+
+import MainPageLayout from "../../layouts/MainPageLayout.astro";
+import GameCard from "../../components/game-card/GameCard.astro";
+
+const boardGameEntries = await getCollection('board-games');
+---
+<style>
+    .game-card-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 30%));
+        gap: 32px;
+        padding: 12px;
+    }
+</style>
+
+<MainPageLayout>
+    <div slot="content">
+        <div class="game-card-container">
+            {boardGameEntries.map(({data}) =>
+                    <GameCard title={data.title}
+                              info={data.info}
+                              description={data.description}
+                              imageLink={data.image}/>
+            )}
+        </div>
+    </div>
+</MainPageLayout>
