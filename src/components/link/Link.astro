@@ -6,6 +6,6 @@ const { pathname } = new URL(Astro.request.url);
     @import "./Link.scss";
 </style>
 
-<a href={path} class:list={["link", pathname === path ? "active" : ""]}>
+<a href={path} class:list={["link", pathname === path ? "active" : ""]} title={`${title} | Be The Pawn`}>
     {title}
 </a>
