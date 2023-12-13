@@ -9,14 +9,15 @@ const boardGameEntries = await getCollection('board-games');
 <style>
     .game-card-container {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(400px, 30%));
+        grid-template-columns: repeat(auto-fit, minmax(400px, 45%));
+        justify-content: center;
         gap: 32px;
         padding: 12px;
     }
 </style>
 
 <MainPageLayout>
-    <div slot="content">
+    <div slot="content" class="games-container">
         <div class="game-card-container">
             {boardGameEntries.map(({data}) =>
                     <GameCard title={data.title}

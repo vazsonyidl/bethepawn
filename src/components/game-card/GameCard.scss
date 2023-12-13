@@ -2,19 +2,18 @@
 
 .game-card-root {
   display: flex;
-  border: 1px solid colors.$color-azure;
-  padding: 12px;
+  border: 1px solid colors.$color-alice-blue;
   border-radius: 12px;
-
-  @media screen and (max-width: 768px) {
-    flex-direction: column;
-  }
 }
 
 .game-card-image {
-  padding: 0 12px 0 0;
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 0 16px;
+  border-radius: 12px;
 }
 
-.game-card-info {
-  color: colors.$color-haiti;
+.game-card-content {
+  padding: 16px;
 }

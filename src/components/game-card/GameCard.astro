@@ -7,19 +7,20 @@ const {title, info, description, imageLink} = Astro.props;
     @import "GameCard.scss";
 </style>
 
-<div class='game-card-root'>
+<div class="game-card-root">
     <div class="game-card-image">
         <Image src={imageLink} alt={`${title}-image`} width="180" height="180"/>
     </div>
     <div class="game-card-content">
-        <h4>
+        <h1>
             {title}
-        </h4>
-        <h5 class="game-card-info">
-            {info}
-        </h5>
-        <div>
+        </h1>
+        <p>
             {description}
-        </div>
+        </p>
+
+        <p>
+            {info}
+        </p>
     </div>
 </div>
