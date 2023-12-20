@@ -7,6 +7,11 @@ import GameCard from "../../components/game-card/GameCard.astro";
 const boardGameEntries = await getCollection('board-games');
 ---
 <style>
+    .header-container {
+        padding: 12px;
+        text-align: center;
+    }
+
     .game-card-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(400px, 45%));
@@ -18,7 +23,15 @@ const boardGameEntries = await getCollection('board-games');
 
 <MainPageLayout>
     <div slot="content" class="games-container">
+        <div class="header-container">
+            <h1>Itt találhatjátok Veszprémben kölcsönözhető játékainkat!</h1>
+            <p>A teljes listáért valamint foglalásért látogassátok meg <a href="https://facebook.com/bethepawn"
+                                                                          rel="noopener noreferrer" target="_blank">Facebook</a>
+                oldalunkat.
+            </p>
+        </div>
         <div class="game-card-container">
+
             {boardGameEntries.map(({data}) =>
                     <GameCard title={data.title}
                               info={data.info}
