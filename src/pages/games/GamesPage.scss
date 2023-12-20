@@ -1,0 +1,16 @@
+.header-container {
+  padding: 12px;
+  text-align: center;
+}
+
+.game-card-container {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: center;
+  gap: 32px;
+  padding: 12px;
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}

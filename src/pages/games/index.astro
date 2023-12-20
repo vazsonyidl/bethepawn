@@ -7,18 +7,7 @@ import GameCard from "../../components/game-card/GameCard.astro";
 const boardGameEntries = await getCollection('board-games');
 ---
 <style>
-    .header-container {
-        padding: 12px;
-        text-align: center;
-    }
-
-    .game-card-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(400px, 45%));
-        justify-content: center;
-        gap: 32px;
-        padding: 12px;
-    }
+    @import "GamesPage.scss";
 </style>
 
 <MainPageLayout>
