@@ -1,8 +1,9 @@
 ---
-import { Image } from 'astro:assets';
+import {Image} from 'astro:assets';
 
 import '../../styles/colors.scss';
 import logo from '../../../public/logo.svg';
+import facebook_primary from '../../../public/facebook_primary.svg';
 
 import Link from "../link/Link.astro";
 ---
@@ -14,9 +15,17 @@ import Link from "../link/Link.astro";
 
     .navigation {
         display: flex;
-        align-items: center;
         flex: 1;
+        align-items: center;
         justify-content: center;
+        margin: 8px;
+        border-left: 1px solid var(--color-alice-blue);
+        border-right: 1px solid var(--color-alice-blue);
+    }
+
+    .social-container {
+        display: flex;
+        align-items: center;
     }
 </style>
 
@@ -28,5 +37,11 @@ import Link from "../link/Link.astro";
         <Link title="Rólunk" path="/about-us/"/>
         <Link title="Játékok" path="/games/"/>
     </nav>
+    <div class="social-container">
+        <a href="https://facebook.com/bethepawn"
+           rel="noopener noreferrer" target="_blank" title="Facebook - Be The Pawn">
+            <Image src={facebook_primary} alt="sad side-eyed pawn figure" width="32" height="32"/>
+        </a>
+    </div>
 </div>
 
