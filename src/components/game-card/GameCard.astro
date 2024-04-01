@@ -9,7 +9,10 @@ const {title, info, description, imageLink} = Astro.props;
 
 <div class="game-card-root">
     <div class="game-card-image">
-        <Image src={imageLink} alt={`${title}-image`} width="180" height="180"/>
+        {
+            imageLink ?
+                <Image src={imageLink} alt={`${title}-image`} width="180" height="180"/> : null
+        }
     </div>
     <div class="game-card-content">
         <h1>

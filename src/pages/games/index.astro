@@ -14,16 +14,15 @@ const boardGameEntries = await getCollection('board-games');
     <div slot="content" class="games-container">
         <div class="header-container">
             <h1>Itt találhatjátok Veszprémben kölcsönözhető játékainkat!</h1>
-            <p>A teljes listáért valamint foglalásért látogassátok meg <a href="https://facebook.com/bethepawn"
-                                                                          rel="noopener noreferrer" target="_blank">Facebook</a>
-                oldalunkat.
+            <p>Foglalásért jelenleg látogassátok meg <a href="https://facebook.com/bethepawn"
+                                                        rel="noopener noreferrer" target="_blank">Facebook</a>
+                oldalunkat. Hamarosan itt, a weboldalon is tudtok foglalást leadni!
             </p>
         </div>
         <div class="game-card-container">
-
             {boardGameEntries.map(({data}) =>
                     <GameCard title={data.title}
-                              info={data.info}
+                              info={`${data.players} | ${data.time} | ${data.age}`}
                               description={data.description}
                               imageLink={data.image}/>
             )}

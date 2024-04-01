@@ -1,6 +1,11 @@
 {
-  "title": "Exploding kittens",
-  "info": "2-10 játékos | 15 perc | 7+",
-  "description": "A Robbanó cicák – partipakk egy nagyon könnyen tanulható társasjáték, 2 - 10 játékos részére, az átlagos játékidő rövid, csak 15 perc. A társast, a könnyebb tanulhatósága miatt, akár már 7 éves kortól ajánljuk kipróbálni. A játékmenet erősen épít a kollekció gyűjtés, a pakli tervezés, a merj és nyerj, a játékos kiiktatás és a vedd el mechanizmusokra.",
+  "title": "Exploding Kittens - Party Pack",
+  "language": "angol",
+  "price-per-week": "800Ft",
+  "deposit": "7,000Ft",
+  "players": "2-10 játékos",
+  "time": "15 perc",
+  "age": "7+",
+  "description": "A Robbanó cicák – Partipakk pörgős és vicces extrém partijáték még nagyobb társaságoknak. Ebben a társasjátékban a játékosok meg akarják úszni, hogy robbanó cica kártyát húzzanak a pakliból. Ezért ravasz trükköket vetnek be: lapokat csennek egymástól, megakadályozzák kártyák kijátszását, átrendezik a pakli legfelső lapjait...",
   "image": "/board-games/exploding-kittens.jpg"
 }

@@ -1,6 +1,11 @@
 {
   "title": "Catan telepesei",
-  "info": "3-4 játékos | 45 perc | 12+",
-  "description": "A Catan: Telepesei egy könnyen tanulható társasjáték, 3 - 4 játékos részére, az átlagos játékidő hosszabb, akár 1 - 2 óra is lehet. A játék 1995-ben megnyerte a Spiel des Jahres díját Az Év Játéka kategóriában. A társast, a könnyebb tanulhatósága ellenére, csak 10 éves kortól ajánljuk kipróbálni. A játékmenet erősen épít a kereskedés, a moduláris tábla, a hatszög-rács, a kockadobás és az útépítés mechanizmusokra.",
+  "language": "magyar",
+  "price-per-week": "1,500Ft",
+  "deposit": "10,000Ft",
+  "players": "3-4 játékos",
+  "time": "1-2 óra",
+  "age": "10+",
+  "description": "A Catan Telepesei társasjátékban az első telepesek egy ismeretlen sziget partjaihoz érnek. Településeket és utcákat építenek, településeiket városokká fejlesztik. Élénk cserekereskedelemmel új lehetőségek nyílnak meg mindenki előtt!",
   "image": "/board-games/catan.jpg"
 }

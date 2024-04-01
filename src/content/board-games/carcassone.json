@@ -1,6 +1,11 @@
 {
-  "title": "Carcassone",
-  "info": "2-5 játékos | 30 perc | 7+",
+  "title": "Carcassonne",
+  "language": "magyar",
+  "price-per-week": "800Ft",
+  "deposit": "6,500Ft",
+  "players": "2-5 játékos",
+  "time": "30-45 perc",
+  "age": "7+",
   "description": "Megszépült Carcassonne alapjáték,változatlan szabályokkal. A Carcassonne egy furfangos lapkalerakó-játék, amiben a játékosok tájlapkák lehelyezésével Carcassonne útjait, városait és kolostorait építik. A kialakuló tájelemekre a játékosok követőket állítanak. A követők – útonállók, lovagok, földművesek és szerzetesek – segítenek a pontok megszerzésében!",
   "image": "/board-games/carcassone.jpg"
 }

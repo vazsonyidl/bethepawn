@@ -1,6 +1,11 @@
 {
   "title": "Babszüret",
-  "info": "2-7 játékos | 45 perc | 12+",
+  "language": "magyar",
+  "price-per-week": "500Ft",
+  "deposit": "2,500Ft",
+  "players": "2-7 játékos",
+  "time": "45 perc",
+  "age": "12+",
   "description": "Itt a babszüret ideje!\nNagyon téved, aki azt hiszi, hogy a bab csak egy egyszerű növény! A babokkal ugyanis értékes tallérhoz lehet jutni!",
   "image": "/board-games/babszuret.jpg"
 }

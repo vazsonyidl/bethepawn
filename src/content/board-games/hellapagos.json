@@ -1,6 +1,11 @@
 {
-  "title": "Hellapagos",
-  "info": "3-14 játékos | 30 perc | 8+",
-  "description": "Hajótöröttek vidám küzdelme a túlélésért... A Hellapagos vicces extrém partijáték nagyobb társaságoknak is. Ebben a társasjátékban a játékosok hajótöröttek, akik élemet és vizet gyűjtenek, építgetik a tutajukat, hasznos cuccokat szereznek a hajóroncsból... míg rá nem jönnek, hogy ennyien nem férnek el a tutajon, és nem lesz elég vizük és élelmük a túléléshez, és ki nem derül: egy pisztoly néha többet ér, mint pár korty víz...",
+  "title": "Hellapagos - Hajótöröttek szigete",
+  "language": "magyar",
+  "price-per-week": "800Ft",
+  "deposit": "5,000Ft",
+  "players": "3-12 játékos",
+  "time": "20 perc",
+  "age": "8+",
+  "description": "A Hellapagos egy furcsa partijáték: a játékosok hajótöröttekként összedolgoznak, hogy a hurrikán érkezése előtt el tudjanak menekülni a szigetről, ami mellett a baleset történt, de minden játékos, ha csak teheti, elrejt enni- és innivalót magának, mert ha nem jut elég mindenkinek, valakit éhhalálra ítélnek (sőt akár meg is esznek…). Együttműködés, élelemrejtegetés, reménykedés!",
   "image": "/board-games/hellapagos.jpg"
 }
