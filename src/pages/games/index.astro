@@ -21,10 +21,7 @@ const boardGameEntries = await getCollection('board-games');
         </div>
         <div class="game-card-container">
             {boardGameEntries.map(({data}) =>
-                    <GameCard title={data.title}
-                              info={`${data.players} | ${data.time} | ${data.age}`}
-                              description={data.description}
-                              imageLink={data.image}/>
+                <GameCard data={data}/>
             )}
         </div>
     </div>

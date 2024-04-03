@@ -1,8 +1,18 @@
 ---
 import {Image} from 'astro:assets';
+import {CollectionEntry} from 'astro:content';
+import Badge from "../badge/Badge.astro";
+import {BADGE_VARIANT} from "../badge";
 
-const {title, info, description, imageLink} = Astro.props;
+interface Props {
+    data: CollectionEntry<"board-games">;
+}
+
+const {data : {title, description, imageLink, deposit, 'price-per-week': price, players, time, age}} = Astro.props;
+
+const info=`${players} | ${time} | ${age}`;
 ---
+
 <style is:raw>
     @import "GameCard.scss";
 </style>
@@ -11,7 +21,7 @@ const {title, info, description, imageLink} = Astro.props;
     <div class="game-card-image">
         {
             imageLink ?
-                <Image src={imageLink} alt={`${title}-image`} width="180" height="180"/> : null
+                    <Image src={imageLink} alt={`${title}-image`} width="180" height="180"/> : null
         }
     </div>
     <div class="game-card-content">
@@ -25,5 +35,9 @@ const {title, info, description, imageLink} = Astro.props;
         <p>
             {info}
         </p>
+        <div class="badge-list">
+            <Badge variant={BADGE_VARIANT.PRIMARY}>{price} / hét</Badge>
+            <Badge variant={BADGE_VARIANT.PRIMARY}>{deposit} kaució</Badge>
+        </div>
     </div>
 </div>
