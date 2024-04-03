@@ -4,7 +4,7 @@ import {getCollection} from 'astro:content';
 import MainPageLayout from "../../layouts/MainPageLayout.astro";
 import GameCard from "../../components/game-card/GameCard.astro";
 
-const boardGameEntries = await getCollection('board-games');
+const boardGameEntries = await getCollection<'board-games'>('board-games');
 ---
 <style>
     @import "GamesPage.scss";

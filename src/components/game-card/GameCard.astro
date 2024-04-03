@@ -1,14 +1,14 @@
 ---
 import {Image} from 'astro:assets';
-import {CollectionEntry} from 'astro:content';
+import type {CollectionEntry} from 'astro:content';
 import Badge from "../badge/Badge.astro";
 import {BADGE_VARIANT} from "../badge";
 
 interface Props {
-    data: CollectionEntry<"board-games">;
+    data: CollectionEntry<'board-games'>['data']
 }
 
-const {data : {title, description, imageLink, deposit, 'price-per-week': price, players, time, age}} = Astro.props;
+const {data : {title, description, image: imageLink, deposit, 'price-per-week': price, players, time, age}} = Astro.props;
 
 const info=`${players} | ${time} | ${age}`;
 ---
