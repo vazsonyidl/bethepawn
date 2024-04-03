@@ -1,0 +1,14 @@
+---
+import {BADGE_VARIANT} from "./Badge";
+import './Badge.scss';
+
+interface Props {
+    variant: BADGE_VARIANT
+}
+
+const {variant} = Astro.props;
+---
+
+<div class="content" data-variant={variant}>
+    <slot/>
+</div>

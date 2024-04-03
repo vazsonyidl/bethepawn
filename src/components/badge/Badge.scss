@@ -1,0 +1,13 @@
+@use 'src/styles/colors.scss' as colors;
+
+.content {
+  font-size: 0.75rem;
+  width: max-content;
+  padding: 8px;
+  border-radius: 16px;
+}
+
+.content[data-variant="PRIMARY"] {
+  background: colors.$color-grey-bright;
+  color: colors.$color-black;
+}

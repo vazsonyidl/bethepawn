@@ -1,0 +1,1 @@
+export {BADGE_VARIANT} from './Badge.ts'

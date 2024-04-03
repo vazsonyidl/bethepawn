@@ -1,6 +1,5 @@
 import {defineCollection, z} from 'astro:content';
 
-
 const boardGamesCollection = defineCollection({
     type: 'data', // v2.5.0 and later
     schema: z.object({
