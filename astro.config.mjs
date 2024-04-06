@@ -14,5 +14,8 @@ export default defineConfig({
         `${URL}/sitemap-index.xml`,
     ]
   }),
-    sitemap()]
+    sitemap()],
+    build: {
+      inlineStylesheets: 'never'
+    }
 });
