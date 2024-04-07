@@ -7,7 +7,7 @@ export const getContentSecurityPolicy = (): string => {
     }
 
     if (isProdEnvironment) {
-        return "default-src 'self'; style-src http://localhost:4321/ https://bethepawn.com/; script-src 'self' static.cloudflareinsights.com; connect-src cloudflareinsights.com";
+        return "default-src 'self'; style-src http://localhost:4321/ https://bethepawn.com/; script-src 'self' static.cloudflareinsights.com; connect-src 'self' cloudflareinsights.com";
     }
 
     return "";
