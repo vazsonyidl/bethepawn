@@ -1,3 +1,7 @@
+---
+import {getContentSecurityPolicy} from './HeaderService';
+---
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,9 +11,7 @@
     <meta name="googlebot" content="index,follow">
     <meta name="geo.position" content="47.1028;17.9093">
     <meta name="google-site-verification" content="nLaPcvJoeA3m8-VR7er4IjfsiV8VsMHsS3IXJhE6xNM"/>
-    <meta
-            http-equiv="Content-Security-Policy"
-            content="default-src 'self'; style-src http://localhost:4321/ https://bethepawn.com/;" />
+    <meta http-equiv="Content-Security-Policy" content={getContentSecurityPolicy()}>
 
     <title>bethepawn | Társasjáték kölcsönző Veszprémben</title>
     <link rel="icon" sizes="any" href="/logo.ico"/>
