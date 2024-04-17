@@ -1,0 +1,12 @@
+---
+import MainPageLayout from "../../layouts/MainPageLayout.astro";
+
+import {isRentEnabled} from "./RentService";
+---
+
+{
+    isRentEnabled() &&
+    <MainPageLayout>
+        <div slot="content">Rental page</div>
+    </MainPageLayout>
+    }
